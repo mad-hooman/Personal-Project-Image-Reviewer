@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Image Reviewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Intro Page -->
+  <div id="intro-page">
+    <div class="intro-content">
+      <h1>🖼️ AI Image Reviewer</h1>
+      <div class="instructions">
+        <h2>How to Use</h2>
+        <ol>
+          <li>Enter batch name when starting</li>
+          <li>Select parent directory containing your images</li>
+          <li>Navigate with arrow keys:
+            <div class="keyboard-shortcuts">
+              <div>← → : Switch folders</div>
+              <div>↑ ↓ : Select images</div>
+            </div>
+          </li>
+          <li>Save batch when finished</li>
+        </ol>
+      </div>
+      <button id="start-review">▶ Start Review</button>
+    </div>
+    <div class="copyright">Mano 2025</div>
+  </div>
+
+  <!-- Main App -->
+  <div id="app-container" style="display: none">
+    <div id="header">
+      <h1>AI Image Reviewer</h1>
+      <div class="batch-info">Batch: <span id="current-batch"></span></div>
+    </div>
+
+    <div id="image-container">
+      <img id="image" alt="AI Generated Image">
+    </div>
+
+    <div id="controls">
+      <div id="folder-info">
+        <span id="folder-name">Folder: </span>
+        <span id="position">| Position: 0/0</span>
+        <span id="counter">| Image 1/4</span>
+      </div>
+    </div>
+
+    <button id="save-batch">💾 Save Batch</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
